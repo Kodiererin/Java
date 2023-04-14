@@ -1,47 +1,49 @@
 package Sorting;
 
-import java.util.Collection;
+import java.util.ArrayList;
 import java.util.Collections;
-
-public class g_BucketSort implements Comparable<Integer> {
+import java.util.Comparator;
+public class g_BucketSort {
 	public static void main(String[] args) {
-		int[] arr = {1,32,12,33,22,55};
-		bucketSort(arr, 4);
+		System.out.println("Hello World");
+		bucketSort();
 	}
-	public static void bucketSort(int[] arr , int k) {
-		int n = arr.length;
+
+	public static void bucketSort(){
+		int[] arr = {20,88,70,85,75,95,95,18,82,60};
+		int bucket = 5;
+
 		int maxValue = arr[0];
-		
-		for(int i=0 ; i<n ; i++)
+		for(int i=0 ; i<arr.length ; i++) {
 			maxValue = Math.max(maxValue, arr[i]);
-		
-//		Initialising Arraylist
-		java.util.ArrayList<java.util.ArrayList<Integer>> bucket = new java.util.ArrayList<>();
-		
-		for(int i=0 ; i<n ; i++) {
-			bucket.add(new java.util.ArrayList<Integer>());
 		}
 		
-		for(int i=0 ; i<n ; i++) {
-			int bi = (k*arr[i])/maxValue;
-			bucket.add(bi, arr[i]);
+		maxValue++;
+		
+		ArrayList<ArrayList<Integer>> list = new ArrayList<ArrayList<Integer>>();
+		
+		for(int i=0 ; i<bucket ; i++) {
+			list.add(new ArrayList<>());
 		}
 		
-		for(int i=0 ; i<k ; i++) {
-			Collections.sort(bucket.get(i));
+		for(int i=0 ; i<arr.length ; i++	) {
+			int bi = (bucket*arr[i])/maxValue;
+			list.get(bi).add(arr[i]);
 		}
 		
+		for(int i=0 ; i<bucket ; i++) {
+			Collections.sort(list.get(i));
+		}
 		
 		int index = 0;
-		
-		for(int i=0 ; i<bucket.size() ; i++) {
-			for(int j=0 ; j<bucket.get(i).SIZE ; j++) {
-				System.out.println(bucket.get(j));
+		for(int i=0 ; i<bucket ; i++) {
+			for(int j=0 ; j<list.get(i).size() ; j++) {
+				arr[index] = list.get(i).get(j);
+				index++;
 			}
 		}
-	}
-	@Override
-	public int compareTo(Integer o) {
-		return this.compareTo(o);
+		
+		for(int i=0 ; i<arr.length ; i++)
+			System.out.println(arr[i]);
 	}
 }
