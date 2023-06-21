@@ -1,6 +1,6 @@
 package DisjointSet;
-//	
-public class c_KruskalAlgorithm 
+//
+public class c_KruskalAlgorithm
 {
-	
+
 }

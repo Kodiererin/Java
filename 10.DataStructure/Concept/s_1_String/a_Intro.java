@@ -8,7 +8,7 @@ package s_1_String;
 //	There are 128 Standard ASCII values.
 //	That Covers most of the characters and have 32 controlled Characters (which are the first 32 eg : @#$%^&)
 //	These limited set of characters make String Special.
-//	A-Z 26 characters and a-z Character 
+//	A-Z 26 characters and a-z Character
 
 //	C/C++ use ASCII which store datatype of 8 Bits.
 //	ASCII is one of the oldest form String.
@@ -17,7 +17,7 @@ package s_1_String;
 //	String class uses 8 bit char.
 
 //	In Java datatype is UTF-16 and is store in 16 bit.
-//	UTF-16 is the Unicode Standard Format. 
+//	UTF-16 is the Unicode Standard Format.
 //	Why Unicode?
 //	In Ascii we could only store English Variables and there was a need to store other languages
 //	And that is why Unicode was created. Unicode stores 16 bits of characters.
@@ -25,7 +25,7 @@ package s_1_String;
 //	in UNICODE-16, 16 is the version of the Unicode.
 //	A - 65 and a - 97  are the contiguous Values.
 //	String in Java uses UTF-16 values.
-	
+
 class play
 {
 	public static void play1()
@@ -45,7 +45,7 @@ class play
 		int count[] = new int[26];
 		for(int i=0 ; i<str.length() ; i++)
 		{
-			count[(int)str.charAt(i)-'a']++;
+			count[str.charAt(i)-'a']++;
 		}
 		for(int i=0 ; i<26 ; i++)
 		{
@@ -57,9 +57,9 @@ class play
 	}
 //	This is 26 length so It is considered as Constant Loop!.
 }
-public class a_Intro 
+public class a_Intro
 {
-	public static void main(String[] args) 
+	public static void main(String[] args)
 	{
 		play.play1();
 		play.playFrequency("Ujjwal");

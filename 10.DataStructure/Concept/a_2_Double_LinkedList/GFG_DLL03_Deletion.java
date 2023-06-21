@@ -1,8 +1,8 @@
 package a_2_Double_LinkedList;
 
-public class GFG_DLL03_Deletion 
+public class GFG_DLL03_Deletion
 {
-	public static void main(String[] args) 
+	public static void main(String[] args)
 	{
 //		Just A Sample For Demostration Purpose
 		Node Head = new Node(10);
@@ -11,7 +11,7 @@ public class GFG_DLL03_Deletion
 		Head.next.next = new Node(30);
 		Head.next.next.prev = Head.next.next;
 		Head.next.next.next = new Node(40);
-		Head.next.next.next.prev = Head.next.next.next;		
+		Head.next.next.next.prev = Head.next.next.next;
 		display(Head);
 		delFirst(Head);
 		delLast(Head);
@@ -32,9 +32,9 @@ public class GFG_DLL03_Deletion
 //	delLast Function
 	public static void delLast(Node Head)
 	{
-		if(Head ==null) 
+		if(Head ==null)
 			System.out.println("THe List Is Empty");
-		if(Head.next == null)	
+		if(Head.next == null)
 			System.out.println("The List Has only One Node");
 		Node curr = Head;
 		while(curr.next.next!=null)

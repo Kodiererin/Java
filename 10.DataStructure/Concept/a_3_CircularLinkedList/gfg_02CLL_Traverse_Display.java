@@ -2,7 +2,7 @@ package a_3_CircularLinkedList;
 
 public class gfg_02CLL_Traverse_Display
 {
-	public static void main(String[] args) 
+	public static void main(String[] args)
 	{
 		Node Head = new Node(10);
 		Head.next = new Node(20);
@@ -25,7 +25,7 @@ public class gfg_02CLL_Traverse_Display
 		}
 		System.out.println(curr.data);
 	}
-//	method-2 do-While Loop	
+//	method-2 do-While Loop
 	public static void display2(Node head)
 	{
 		if(head==null)

@@ -1,8 +1,8 @@
 package a_2_Double_LinkedList;
 
-public class GFG_DLL02_Insertion 
+public class GFG_DLL02_Insertion
 {
-	public static void main(String[] args) 
+	public static void main(String[] args)
 	{
 //		Just A Sample For Demostration Purpose
 		Node Head = new Node(10);
@@ -11,7 +11,7 @@ public class GFG_DLL02_Insertion
 		Head.next.next = new Node(30);
 		Head.next.next.prev = Head.next.next;
 		Head.next.next.next = new Node(40);
-		Head.next.next.next.prev = Head.next.next.next;		
+		Head.next.next.next.prev = Head.next.next.next;
 		display(Head);
 		InsertBeg(Head,90);
 		InsertLast(Head,99);
@@ -28,7 +28,7 @@ public class GFG_DLL02_Insertion
 		display(Head);
 	}
 //	Insert At Last
-	public static void InsertLast(Node Head , int data)	
+	public static void InsertLast(Node Head , int data)
 	{
 		Node temp = new Node(data);
 		Node curr = Head;

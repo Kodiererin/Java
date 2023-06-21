@@ -1,7 +1,6 @@
 package concept_BinaryHeap;
 
-public class a_Intro 
-{
+public class a_Intro {
 //	### Binary Heap Datastructure is Used to implement Heap Sort.
 //	It is  also used to implement Priority Queue infact main implementation of Heap DS is to use Priority Queue.
 //
@@ -18,10 +17,10 @@ public class a_Intro
 //	1. The Lowest Number is assigned to a person meet the highest then this is what is we called MINHEAP.
 //	******In MIN HEAP Highest priority is assigned to the Lowest Value.******
 //	2. In ********************Max Heap********************  ********************items is assigned to the Highest Value.
-//	When we want to remove the Person from the Priority queue we remove the Person with Highest Value.******************** 
-//	    
+//	When we want to remove the Person from the Priority queue we remove the Person with Highest Value.********************
+//
 //	    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/27c53478-7c8c-4cbf-aa5e-7e122eb4dead/Untitled.png)
-//	    
+//
 //
 //	![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/71c95e2e-e3a1-4840-9f1b-892c5c34fe2c/Untitled.png)
 //
@@ -46,7 +45,7 @@ public class a_Intro
 //	### Advantage of Such A Structure.
 //
 //	**************************************Ques :Why Do we need to restrict the Binary Heap to a Binary Tree?
-//	ans   :************************************** The reason we need to restrict the Binary Heap to a Binary Tree is Because we want to **Store Binary Heap Data structure as an Array**. 
+//	ans   :************************************** The reason we need to restrict the Binary Heap to a Binary Tree is Because we want to **Store Binary Heap Data structure as an Array**.
 //
 //	We need to store Binary Tree Elements into an Array and to minimise the gaps in the Array We need to use Binary Heap Data structure and Holding Proper Parent Child Relationship
 //
@@ -72,11 +71,11 @@ public class a_Intro
 //
 //	# MIN Heap Data Structure.
 //
-//	1. ******************************Complete Binary Tree.****************************** 
+//	1. ******************************Complete Binary Tree.******************************
 //	2. **************Every Node has Value smaller than its descendants.
 //	Decendents : Papa ka Value km h lekin beta ka Value zaada h!**************
 //
-//	 ************************************************************************************************Note : Min Heap Actually represented as an array.************************************************************************************************ 
+//	 ************************************************************************************************Note : Min Heap Actually represented as an array.************************************************************************************************
 //
 //	![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d5c88bde-90bb-44be-a0c0-9d128eea453c/Untitled.png)
 //

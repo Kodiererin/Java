@@ -1,6 +1,6 @@
 package concept_BinarySearchTree;
 
-public class Node 
+public class Node
 {
 	int key;
 	Node left , right;

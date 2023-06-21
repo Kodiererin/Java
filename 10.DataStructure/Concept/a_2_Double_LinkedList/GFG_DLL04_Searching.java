@@ -1,8 +1,8 @@
 package a_2_Double_LinkedList;
 
-public class GFG_DLL04_Searching 
+public class GFG_DLL04_Searching
 {
-	public static void main(String[] args) 
+	public static void main(String[] args)
 	{
 //		Just A Sample For Demostration Purpose
 		Node Head = new Node(10);
@@ -11,7 +11,7 @@ public class GFG_DLL04_Searching
 		Head.next.next = new Node(30);
 		Head.next.next.prev = Head.next.next;
 		Head.next.next.next = new Node(40);
-		Head.next.next.next.prev = Head.next.next.next;	
+		Head.next.next.next.prev = Head.next.next.next;
 		Node Tail = new Node(50);
 		Head.next.next.next.next = Tail;
 		Tail.prev = Head.next.next.next;

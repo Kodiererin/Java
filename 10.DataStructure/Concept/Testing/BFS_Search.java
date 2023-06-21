@@ -24,10 +24,10 @@ public class BFS_Search {
         head.left.left.left = new Tree(60);
         head.right.right.right = new Tree(70);
 
-        
+
         BFSsearch(head);
     }
-    
+
     public static void BFSsearch(Tree Head){
         if(Head==null){
             return;

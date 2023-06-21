@@ -1,6 +1,6 @@
 package a_2_Double_LinkedList;
 
-public class Node 
+public class Node
 {
 	Node next;
 	Node prev;

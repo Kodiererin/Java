@@ -23,38 +23,38 @@ class info_LinkedList
 	}
 }
 
-public class Linked_List_Collection_Framework extends Thread 
+public class Linked_List_Collection_Framework extends Thread
 {
-	public static void main(String[] args) 
+	public static void main(String[] args)
 	{
 		info_LinkedList info = new info_LinkedList();
 		System.out.println("\n");
-		
+
 		LinkedList<Integer> l1 = new LinkedList<>();
 		LinkedList<Integer> l2 = new LinkedList<>();
 			l1.add(30);
 			l1.add(39);
 			l1.add(47);
-			
+
 			l2.add(57);
 			l2.add(99);
 			l2.add(109);
 		System.out.println("The List is "+l1);
 		System.out.println("The List is "+l2);
-		
+
 		l1.add(0, 5); // 0 is the index number and 5 is the number that is to be placed in that(by overwriting)
 		System.out.println("\nThe List is "+l1);
-		
-		
+
+
 			l1.addFirst(365);
 		System.out.println("\n The updated Array with added element "+l1);
-		
+
 			l1.addLast(900);
 		System.out.println("\n The updated Array with added element "+l1);
-		
+
 			l1.addAll(2 , l2);
 		System.out.println("\n The New List is "+l1);
-		
+
 		l1.set(1, 500);
 		System.out.println("The L1 Array Size is "+l1);
 		System.out.println("The Updated Array "+l1);

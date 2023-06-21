@@ -23,8 +23,8 @@ class minHeap2
 	{
 		return (int)Math.floor((i-1)/2);
 	}
-	
-	
+
+
 	public void insert(int x)
 	{
 		if(size==capacity)
@@ -39,7 +39,7 @@ class minHeap2
 			i = parent(i);
 		}
 	}
-	
+
 	public void minHeapify(int i)
 	{
 		int lt = left(i);
@@ -75,13 +75,13 @@ class minHeap2
 		arr[size-1] = temp;
 		size--;
 		minHeapify(0);
-		
+
 		return arr[size];
 	}
 }
 public class d_Heapify
 {
-	public static void main(String[] args) 
+	public static void main(String[] args)
 	{
 		minHeap2  obj= new minHeap2(10);
 //		h.insert(3);;
@@ -93,16 +93,14 @@ public class d_Heapify
 		System.out.println("Inserted Function :->");
 		obj = {1, 10, 2, 10, 7, 8, 7, 4, 5, 5 };
 		System.out.println();
-		for(int i=0 ; i<obj.arr.length ; i++)
-		{
-			System.out.print(obj.arr[i]+" ");
+		for (int element : obj.arr) {
+			System.out.print(element+" ");
 		}
 		obj.minHeapify(0);
 		System.out.println("AFter Min HEapify");
-		for(int i=0 ; i<obj.arr.length ; i++)
-		{
-			System.out.print(obj.arr[i]+" ");
+		for (int element : obj.arr) {
+			System.out.print(element+" ");
 		}
-		
+
 	}
 }

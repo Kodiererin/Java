@@ -33,10 +33,10 @@ public class concept_Linked_List
 			tail = n;
 			size++;
 		}
-		
+
 	}
 	}
-	public static void main(String[] args) 
+	public static void main(String[] args)
 	{
 		System.out.println("Linked List Formation from scratch");
 	}

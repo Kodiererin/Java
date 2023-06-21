@@ -1,8 +1,8 @@
 package a_3_CircularLinkedList;
 
-public class gfg_04_00_Insert_at_End_naive 
+public class gfg_04_00_Insert_at_End_naive
 {
-	public static void main(String[] args) 
+	public static void main(String[] args)
 	{
 		Node Head = new Node(10);
 		Head.next = new Node(20);
@@ -14,7 +14,7 @@ public class gfg_04_00_Insert_at_End_naive
 	public static Node insLast(Node head , int data)
 	{
 		Node temp = new Node(data);
-		if(head==null) 
+		if(head==null)
 		{
 			head=temp;
 			head.next = head;

@@ -1,12 +1,11 @@
 package Sorting;
 
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.Comparator;
 
-public class d_Sorting_nonPrimitiveType_Method3_WrapperClass 
+public class d_Sorting_nonPrimitiveType_Method3_WrapperClass
 {
-	public static void main(String[] args) 
+	public static void main(String[] args)
 	{
 		Integer[] arr = {5,20,10,12};
 //		Arrays.sort(arr,Collections.reverseOrder());			// ascending -> Descending
@@ -20,7 +19,7 @@ class myCMP implements Comparator<Integer>
 {
 
 	@Override
-	public int compare(Integer o1, Integer o2) 
+	public int compare(Integer o1, Integer o2)
 	{
 		// TODO Auto-generated method stub
 		return o1%2-o2%2;

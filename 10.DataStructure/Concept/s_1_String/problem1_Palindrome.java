@@ -3,7 +3,7 @@ package s_1_String;
 //	A string is called Palindrome if left-Right == right-left
 
 
-public class problem1_Palindrome 
+public class problem1_Palindrome
 {
 //	---------------- Naive Method -------------------
 //	Time Complexity : Theta(n) time and Auxillary Space Theta(n)
@@ -17,14 +17,14 @@ public class problem1_Palindrome
 //	and O(1) at the best time. It requires constant extra space.
 //	Idea : First Compare First and Last CHaracter.
 //	Then Compare the second and second last character and so on.
-	
+
 //	Case 1 : If the Length of the String is Even. -> if Begin and end cross then they are palindrome
 //	Case 2 : Stop when You reach @ the middle of the String.
 	public static boolean isPalindromeEfficient(String str)
 	{
 		int begin = 0;
 		int end = str.length()-1;
-		while(begin<end) 
+		while(begin<end)
 		{
 			if(str.charAt(begin)!=str.charAt(end))
 				return false;
@@ -33,7 +33,7 @@ public class problem1_Palindrome
 		}
 		return true;
 	}
-	public static void main(String[] args) 
+	public static void main(String[] args)
 	{
 //		checkPalindrome("aaamaaa");
 		System.out.println(isPalindrome("aaamaaa"));

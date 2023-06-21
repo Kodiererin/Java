@@ -1,13 +1,13 @@
 package Sorting;
 
-public class f_InsertionSort 
+public class f_InsertionSort
 {
-	public static void main(String[] args) 
+	public static void main(String[] args)
 	{
 		int[] arr = {3,12,4,2,13,10};
-		
-		
-		
+
+
+
 		for(int i=1 ; i<arr.length ; i++)
 		{
 			int key = arr[i];
@@ -19,9 +19,8 @@ public class f_InsertionSort
 			}
 			arr[j+1] = key;
 		}
-		for(int i=0 ; i<arr.length ; i++)
-		{
-			System.out.println(arr[i]);
+		for (int element : arr) {
+			System.out.println(element);
 		}
 		System.out.println("-------------------------------------------");
 		myCode();
@@ -29,7 +28,7 @@ public class f_InsertionSort
 	public static void myCode()
 	{
 		int arr[] = {3,12,4,2,13,10};
-		
+
 		for(int i=1 ; i<arr.length ; i++)
 		{
 			int check = arr[i];
@@ -41,10 +40,9 @@ public class f_InsertionSort
 			}
 			arr[j+1] = check;
 		}
-		
-		for(int i=0 ; i<arr.length ; i++)
-		{
-			System.out.println(arr[i]);
+
+		for (int element : arr) {
+			System.out.println(element);
 		}
 	}
 	public static void info()

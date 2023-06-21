@@ -11,21 +11,20 @@ class Point implements Comparable<Point>
 		this.y = y;
 	}
 	@Override
-	public int compareTo(Point o) 
+	public int compareTo(Point o)
 	{
 		return this.x-o.x;
 	}
 }
 
-public class c_Sorting_nonPrimitive_Method1 
+public class c_Sorting_nonPrimitive_Method1
 {
-	public static void main(String[] args) 
+	public static void main(String[] args)
 	{
 		Point[] arr = {new Point(10,20),new Point(3,12), new Point(5,7)};
 		Arrays.sort(arr);
-		for(int i=0 ; i<arr.length ; i++)
-		{
-			System.out.println(arr[i].x+" "+arr[i].y );
+		for (Point element : arr) {
+			System.out.println(element.x+" "+element.y );
 		}
 	}
 }

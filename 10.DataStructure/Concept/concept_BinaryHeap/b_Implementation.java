@@ -1,6 +1,6 @@
 package concept_BinaryHeap;
-
-public class b_Implementation 
+//	Min Heap Is Actually Represented an an array
+public class b_Implementation
 {
 	class MinHeap
 	{
@@ -13,7 +13,7 @@ public class b_Implementation
 			size = 0;
 			capacity = c;
 		}
-		
+
 		int left(int i)
 		{
 			return (2*i+1);
@@ -24,7 +24,7 @@ public class b_Implementation
 		}
 		int parent(int i)
 		{
-			return (i-i)/2;
+			return (i-1)/2;
 		}
 	}
 }

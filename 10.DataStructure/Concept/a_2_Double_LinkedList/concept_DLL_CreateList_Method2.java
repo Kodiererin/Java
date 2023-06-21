@@ -1,6 +1,6 @@
 package a_2_Double_LinkedList;
-import java.util.*;
-public class concept_DLL_CreateList_Method2 
+import java.util.Scanner;
+public class concept_DLL_CreateList_Method2
 {
 	static Node Head = null;
 	public static void create()
@@ -43,7 +43,7 @@ public class concept_DLL_CreateList_Method2
 		}
 		System.out.println();
 	}
-	public static void main(String[] args) 
+	public static void main(String[] args)
 	{
 		create();
 	}

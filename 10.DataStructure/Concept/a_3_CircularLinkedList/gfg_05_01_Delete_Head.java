@@ -1,8 +1,8 @@
 package a_3_CircularLinkedList;
 
-public class gfg_05_01_Delete_Head 
+public class gfg_05_01_Delete_Head
 {
-	public static void main(String[] args) 
+	public static void main(String[] args)
 	{
 		Node Head = new Node(10);
 		Head.next = new Node(20);

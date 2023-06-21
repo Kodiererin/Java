@@ -3,7 +3,7 @@ package Sorting;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
-import java.util.*;
+import java.util.List;
 
 class myPoint1
 {
@@ -14,11 +14,11 @@ class myPoint1
 		this.y = y;
 	}
 }
-public class e_collectionsSort3_ComparatorInterface 
+public class e_collectionsSort3_ComparatorInterface
 {
-	public static void main(String[] args) 
+	public static void main(String[] args)
 	{
-		List<myPoint1> list = new ArrayList<myPoint1>();
+		List<myPoint1> list = new ArrayList<>();
 		list.add(new myPoint1(5,10));
 		list.add(new myPoint1(2,20));
 		list.add(new myPoint1(10,30));
@@ -29,7 +29,7 @@ public class e_collectionsSort3_ComparatorInterface
 }
 class myComparator implements Comparator<myPoint1>
 {
-	
+
 	@Override
 	public int compare(myPoint1 p1 , myPoint1 p2) {
 		// TODO Auto-generated method stub

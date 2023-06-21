@@ -1,6 +1,6 @@
 package a_3_CircularLinkedList;
 
-public class gfg_03_0_Insert_at_Begin_Naive 
+public class gfg_03_0_Insert_at_Begin_Naive
 {
 //	Naive Method Time Complexity = O(n)
 	public static Node insertBeg(Node head , int data)
@@ -21,17 +21,17 @@ public class gfg_03_0_Insert_at_Begin_Naive
 		return temp;
 	}
 //	Efficient Solution Time Complexity = O(1)
-	public static void main(String[] args) 
+	public static void main(String[] args)
 	{
 		Node Head = new Node(10);
 		Head.next = new Node(20);
 		Head.next.next = new Node(30);
 		Head.next.next.next = new Node(40);
-		
+
 		Node tail = new Node(50);
 		Head.next.next.next.next = tail;
 		tail.next = Head;
-//		Head.next.next.next.next = Head;		
+//		Head.next.next.next.next = Head;
 		System.out.println("Before Insertion ");
 		display(Head);
 		System.out.println("Naive Solution ");

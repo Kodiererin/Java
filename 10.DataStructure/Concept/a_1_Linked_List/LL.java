@@ -7,12 +7,12 @@ public class LL {
     private Node tail;
     private int size;
 
-    public LL() 
+    public LL()
     {
         this.size = 0;
     }
 
-    public void insertFirst(int val) 
+    public void insertFirst(int val)
     {	// this is an important one
         Node node = new Node(val);
         node.next = head;
@@ -24,7 +24,7 @@ public class LL {
         size += 1;
     }
 
-    public void insertLast(int val) 
+    public void insertLast(int val)
     {  	// this is an important one
         if (tail == null) {
             insertFirst(val);

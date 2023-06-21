@@ -1,8 +1,8 @@
 package a_3_CircularLinkedList;
 
-public class gfg_05_02_Delete_Head_Efficient 
+public class gfg_05_02_Delete_Head_Efficient
 {
-	public static void main(String[] args) 
+	public static void main(String[] args)
 	{
 		Node Head = new Node(10);
 		Head.next = new Node(20);
@@ -14,8 +14,7 @@ public class gfg_05_02_Delete_Head_Efficient
 	}
 	public static Node delHead(Node head)
 	{
-		if(head==null) return null;
-		if(head.next==null) return null;
+		if((head==null) || (head.next==null)) return null;
 		head.data = head.next.data;
 		head.next = head.next.next;
 		return head;

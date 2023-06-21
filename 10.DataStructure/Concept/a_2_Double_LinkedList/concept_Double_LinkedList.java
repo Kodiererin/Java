@@ -1,6 +1,6 @@
 package a_2_Double_LinkedList;
 
-public class concept_Double_LinkedList 
+public class concept_Double_LinkedList
 {
 	static void info()
 	{
@@ -9,7 +9,7 @@ public class concept_Double_LinkedList
 		System.out.println("Insertion and Deletion takes Big-Oh of O(1) time as compared to Linked List");
 		System.out.println("Many operations are More or Less Same in Linked List");
 	}
-	public static void main(String[] args) 
+	public static void main(String[] args)
 	{
 		info();
 	}

@@ -27,7 +27,7 @@ package s_1_String;
 //	Note : Strings are already immutable, they donot need Thread Safety class. They are automatically safe.
 //	String class are Automatically String Safe.
 
-	
+
 class stringInJAVA
 {
 	public  void geeks(String str)
@@ -47,8 +47,8 @@ class stringInJAVA
 //		but the string must be present in the other string.
 		System.out.println(str.indexOf(str2)); 		// -1
 //		Similarly there is a lastIndexOf.
-		
-		
+
+
 	}
 //	if the two String have the same content then Java donot allocate new memory to the new Variable
 //	eg : String x = "Ujjwal" && String y = "Ujjwal" 			-> Both will have the same memory
@@ -70,9 +70,9 @@ class stringInJAVA
 			System.out.println("No");
 	}
 }
-public class b_string_in_JAVA 
+public class b_string_in_JAVA
 {
-	public static void main(String[] args) 
+	public static void main(String[] args)
 	{
 		stringInJAVA obj = new stringInJAVA();
 		obj.geeks("Ujjwal");

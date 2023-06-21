@@ -1,6 +1,6 @@
 package a_3_CircularLinkedList;
 
-public class Node 
+public class Node
 {
 	int data;
 	Node next;

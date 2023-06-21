@@ -1,6 +1,6 @@
 package a_2_Double_LinkedList;
 
-public class z_Test_End_In_DLL 
+public class z_Test_End_In_DLL
 {
 	static Node Head;
 	static Node End;
@@ -12,7 +12,7 @@ public class z_Test_End_In_DLL
 		Head.next.next = new Node(30);
 		Head.next.next.prev = Head.next.next;
 		Head.next.next.next = new Node(40);
-		Head.next.next.next.prev = Head.next.next.next;	
+		Head.next.next.next.prev = Head.next.next.next;
 		End = Head.next.next.next ;
 		display(Head , End);
 	}
@@ -22,9 +22,9 @@ public class z_Test_End_In_DLL
 			System.out.println(curr.data);
 		System.out.println(End.data);
 	}
-	public static void main(String[] args) 
+	public static void main(String[] args)
 	{
 		create();
 //		display();
 	}
-}	
+}

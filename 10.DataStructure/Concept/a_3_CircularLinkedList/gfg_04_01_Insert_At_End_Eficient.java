@@ -2,7 +2,7 @@ package a_3_CircularLinkedList;
 
 public class gfg_04_01_Insert_At_End_Eficient
 {
-	public static void main(String[] args) 
+	public static void main(String[] args)
 	{
 		Node Head = new Node(10);
 		Head.next = new Node(20);

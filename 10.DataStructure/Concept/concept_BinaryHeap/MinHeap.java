@@ -1,6 +1,6 @@
 package concept_BinaryHeap;
 
-public class MinHeap 
+public class MinHeap
 {
 	int [] arr = {10,5,20,2,4,8};
 	int size = arr.length;
@@ -11,7 +11,7 @@ public class MinHeap
 //		size = 0;
 //		capacity = c;
 //	}
-	
+
 	int left(int i)
 	{
 		return (2*i+1);
@@ -24,7 +24,7 @@ public class MinHeap
 	{
 		return (i-i)/2;
 	}
-	
+
 	public int[] buildHeap()
 	{
 		int bottomRightParent = (int)Math.floor((size-1-1)/2);
@@ -52,7 +52,7 @@ public class MinHeap
 			minHeapify(smallest);
 		}
 	}
-	public static void main(String[] args) 
+	public static void main(String[] args)
 	{
 		MinHeap obj = new MinHeap();
 		int[] xyz = new int[obj.arr.length];

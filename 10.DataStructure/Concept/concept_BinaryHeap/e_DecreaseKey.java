@@ -5,10 +5,10 @@ class myHeap
 	int[] arr;
 	int size;
 	int capacity;
-	
+
 	myHeap(int capacity)
 	{
-		this.capacity = capacity; 
+		this.capacity = capacity;
 		arr = new int[this.capacity];
 		this.size = 0;
 	}
@@ -18,11 +18,11 @@ class myHeap
 	}
 	int left(int i)
 	{
-		return (int)(2*i + 1);
+		return 2*i + 1;
 	}
 	int right(int i)
 	{
-		return (int)(2*i+2);
+		return 2*i+2;
 	}
 	public void insert(int x)
 	{
@@ -40,11 +40,11 @@ class myHeap
 			i = parent(i);
 		}
 	}
-	
+
 }
-public class e_DecreaseKey 
+public class e_DecreaseKey
 {
-	public static void main(String[] args) 
+	public static void main(String[] args)
 	{
 		myHeap obj = new myHeap(10);
 		for(int i=0 ; i<10 ; i++)
@@ -53,10 +53,9 @@ public class e_DecreaseKey
 			System.out.println("Random Function "+((int)(Math.random()*10)+1));
 			obj.insert(random);
 		}
-		
-		for(int i=0 ; i<obj.arr.length ; i++)
-		{
-			System.out.println(obj.arr[i]);
+
+		for (int element : obj.arr) {
+			System.out.println(element);
 		}
 	}
 }

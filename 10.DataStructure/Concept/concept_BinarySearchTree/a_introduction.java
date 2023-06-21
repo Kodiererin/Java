@@ -1,5 +1,5 @@
 package concept_BinarySearchTree;
-	
+
 //	Binary Search tree is such a tree in which you can skip a item.
 //	1. For every node, Keys in left side are smaller and keys in the right are greater.
 //	2. All keys are typically considered as distinct.
@@ -12,7 +12,7 @@ package concept_BinarySearchTree;
 //	Only Special abotu it is it has a special insert operation.
 //	Also the order must be mainted while deleting the Binary Node.
 
-public class a_introduction 
+public class a_introduction
 {
-	
+
 }

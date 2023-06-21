@@ -1,9 +1,8 @@
 package z_TestingArrays;
 
 import java.math.BigInteger;
-import java.util.Arrays;
 
-public class a_timeCheck_Sorting 
+public class a_timeCheck_Sorting
 {
 	public static void checkTimeInsertionSort()
 	{
@@ -13,7 +12,7 @@ public class a_timeCheck_Sorting
 		for(int i=0 ; i<arr.length ; i++)
 			arr[i] = (int)(Math.random()*1000)+1;
 		x = BigInteger.valueOf(System.currentTimeMillis());
-//		Insetion Sort Begins 
+//		Insetion Sort Begins
 		for(int i=1 ; i<arr.length ; i++)
 		{
 			int replace = arr[i];
@@ -27,13 +26,12 @@ public class a_timeCheck_Sorting
 		}
 		y = BigInteger.valueOf(System.currentTimeMillis());
 		System.out.println("The Time Taken is "+y.subtract(x));
-		for(int i=0 ; i<arr.length ; i++)
-		{
-			System.out.println(arr[i]);
+		for (int element : arr) {
+			System.out.println(element);
 		}
-		
+
 	}
-	public static void main(String[] args) 
+	public static void main(String[] args)
 	{
 		checkTimeInsertionSort();
 	}

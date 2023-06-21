@@ -5,7 +5,7 @@ class tHeap
 	int[] arr = {1, 10, 2, 10, 7, 8, 7, 4, 5, 5 };
 	int size = arr.length;
 	int capacity = arr.length;
-	
+
 	int left(int i)
 	{
 		return (2*i+1);
@@ -18,7 +18,7 @@ class tHeap
 	{
 		return (int)Math.floor((i-1)/2);
 	}
-	
+
 	public void minHeap(int i)
 	{
 		int lt = this.left(i);
@@ -37,16 +37,15 @@ class tHeap
 		}
 	}
 }
-public class test_HEap1 
+public class test_HEap1
 {
-	public static void main(String[] args) 
+	public static void main(String[] args)
 	{
 		tHeap obj = new tHeap();
 		System.out.println("{1, 11, 2, 10, 7, 8, 9, 4, 5, 6 }");
 		obj.minHeap(0);
-		for(int i=0 ; i<obj.arr.length ; i++)
-		{
-			System.out.print(obj.arr[i]+" ");
+		for (int element : obj.arr) {
+			System.out.print(element+" ");
 		}
 	}
 }

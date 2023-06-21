@@ -5,14 +5,14 @@ package s_1_String;
 //	I/P : "GEEKSFORGEEKS"					o/p : 5				<-index
 //	I/P : "abcabc"							o/p : -1			<-index
 //	O/P : "apple"							o/p : 0				<-index
-public class problem5_nonRepeatingCharacter 
-{	
-	public static void main(String[] args) 
+public class problem5_nonRepeatingCharacter
+{
+	public static void main(String[] args)
 	{
 		String str  ="geeksforgeeks";
 		System.out.println(nonRepeating(str));
 	}
-//	Naive Solution : 
+//	Naive Solution :
 //	Idea : We begin from the first Character , we compare with all the other characters and if any of the character then we set the flag as true.
 //	which means it is repeating character.
 //	Time Complexity : O(n^2) and Auxillary Space : O(1)
@@ -29,13 +29,13 @@ public class problem5_nonRepeatingCharacter
 					break;
 				}
 			}
-			if(flag==false)
+			if(!flag)
 				return i;
 		}
 		return -1;
 	}
 //	Approach for Linear Time that require two Traversal
-//	Time Complexity : O(n) 
+//	Time Complexity : O(n)
 //	Auxillary Space : O(1)
 	static final int CHAR = 256;
 	public static int nonRepeating2(String str)
@@ -56,6 +56,6 @@ public class problem5_nonRepeatingCharacter
 //	static final int CHAR = 256;
 	public static int nonRepeating3(String str)
 	{
-		
+
 	}
 }
