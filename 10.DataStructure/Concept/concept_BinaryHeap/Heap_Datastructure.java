@@ -49,7 +49,7 @@ public class Heap_Datastructure {
 			this.capacity = capacity;
 		}
 		
-//		Insertion in the Heap
+//		insertHeapion in the Heap
 		public void insertHeap(int data) {
 //			Increase the size.
 //			And We compare its and move with the loop.
@@ -71,7 +71,7 @@ public class Heap_Datastructure {
 			arr[j] = temp;
 		}
 		
-		public void displayHeap(myHeap heap) {
+		public static  void displayHeap(MyHeap heap) {
 			for(int i=0 ; i<heap.size ; i++) {
 				System.out.println(heap.arr[i]);
 			}
@@ -107,17 +107,17 @@ public class Heap_Datastructure {
 	}
 	
 	public static void main(String[] args) {
-		myHeap heap = new myHeap(10);
-		heap.insert(20);
-		heap.insert(30);
-		heap.insert(15);
-		heap.insert(5);
+		MyHeap heap = new MyHeap(10);
+		heap.insertHeap(20);
+		heap.insertHeap(30);
+		heap.insertHeap(15);
+		heap.insertHeap(5);
 		
 		heap.arr[6] = 3;
 		heap.arr[8] = 7;
 		
 		
-		heap.displayHeap(heap);
+		MyHeap.displayHeap(heap);
 		System.out.println("The Heap Size is "+heap.size);
 	}
 
