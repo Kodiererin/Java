@@ -1,12 +1,22 @@
-package com.BlogBackend.Blog.model;
+package com.BlogBackend.Blog.entity;
 
-import java.util.Arrays;
+import jakarta.persistence.*;
 
+
+
+@Entity
+@Table(name = "blogdata")
 public class Blog {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private int id;
+    @Column(name = "Heading")
     private String Heading;
+    @Column(name = "Body")
     private String Body;
-    private String [] images;
+
+    Blog(){}
 
     public int getId() {
         return id;
@@ -32,13 +42,7 @@ public class Blog {
         Body = body;
     }
 
-    public String[] getImages() {
-        return images;
-    }
 
-    public void setImages(String[] images) {
-        this.images = images;
-    }
 
 
     @Override
@@ -47,7 +51,6 @@ public class Blog {
                 "id=" + id +
                 ", Heading='" + Heading + '\'' +
                 ", Body='" + Body + '\'' +
-                ", images=" + Arrays.toString(images) +
                 '}';
     }
 }
